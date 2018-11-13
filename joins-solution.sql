@@ -1,8 +1,16 @@
 ## Tasks
 1. Get all customers and their addresses.
 
+SELECT * FROM customers
+JOIN addresses on addresses.customer_id = customers.id;
+
 
 2. Get all orders and their line items (orders, quantity and product).
+
+SELECT order_date, line_items.quantity, products.description  FROM orders
+JOIN line_items on line_items.id = orders.id
+JOIN products on products.id = line_items.product_id
+ORDER BY orders.id;
 
 
 3. Which warehouses have cheetos?
