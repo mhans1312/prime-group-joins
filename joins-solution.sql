@@ -16,6 +16,7 @@ ORDER BY orders.id;
 3. Which warehouses have cheetos?
 
 
+
 4. Which warehouses have diet pepsi?
 
 
